@@ -9,6 +9,7 @@ namespace LinkedListProblem
     internal class LinkedList
     {
         public Node head;
+
         //Method to Add Node at Last in Linked List
         public void AddLastNode(int data)
         {
@@ -87,6 +88,17 @@ namespace LinkedListProblem
             newestNode.next = prev.next;
             prev.next = newestNode;
             return this.head;
+        }
+        //Method To delete First Node
+        public int DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                return 0;
+            }
+            int deleteNode = this.head.data;
+            this.head = this.head.next;
+            return deleteNode;
         }
     }
 }
