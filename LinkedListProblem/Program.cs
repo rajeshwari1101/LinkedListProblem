@@ -10,12 +10,25 @@ namespace LinkedListProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" welcome to Linked List Problem\n");
-            LinkedList customLinkedList = new LinkedList();
-            customLinkedList.AddNode(56);
-            customLinkedList.AddNode(30);
-            customLinkedList.AddNode(70);
+            Console.WriteLine("hello welcome to Linked List Problem");
+            Program program = new Program();
+            program.LinkedListCall();
             Console.ReadLine();
+        }
+
+        public void LinkedListCall()
+        {
+            LinkedList customLinkedList = new LinkedList();
+            customLinkedList.AddLastNode(56);
+            customLinkedList.AddLastNode(30);
+            customLinkedList.AddLastNode(76);
+            Console.WriteLine("nodes inserted");
+            customLinkedList.DisplayLinkedList();
+
+            customLinkedList.AddFirstNode(70);
+            customLinkedList.AddFirstNode(30);
+            customLinkedList.AddFirstNode(56);
+            customLinkedList.DisplayLinkedList();
         }
 
 
