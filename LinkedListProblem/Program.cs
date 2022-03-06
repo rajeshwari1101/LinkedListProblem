@@ -24,7 +24,7 @@ namespace LinkedListProblem
             customLinkedList.AddLastNode(70);
             customLinkedList.DisplayLinkedList();
             Console.WriteLine("-------------------------");
-            int node = customLinkedList.DeleteFirstNode();
+            int node = customLinkedList.DeleteLastNode();
             Console.WriteLine("{0} node deleted", node);
             customLinkedList.DisplayLinkedList();
         }
