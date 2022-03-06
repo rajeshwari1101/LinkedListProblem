@@ -13,7 +13,6 @@ namespace LinkedListProblem
         public void AddLastNode(int data)
         {
             Node node = new Node(data);
-
             //condition to Check head and add first Node.
             if (this.head == null)
             {
@@ -23,7 +22,6 @@ namespace LinkedListProblem
             {
                 //Temp Node to work.
                 Node temp = head;
-
                 //Loop to check next pointer in Node.
                 while (temp.next != null)
                 {
@@ -66,9 +64,7 @@ namespace LinkedListProblem
         public Node InsertAtParticularPosition(int position, int data)
         {
             Node newestNode = new Node(data);
-
             //Node Exchange
-
             Node prev = null;
             Node current = this.head;
             int count = 0;
@@ -107,7 +103,6 @@ namespace LinkedListProblem
                 return 0;
             }
             //checking for tail Node.
-
             while (newNode.next.next != null)
             {
                 newNode = newNode.next;
