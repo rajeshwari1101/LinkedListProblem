@@ -8,8 +8,8 @@ namespace LinkedListProblem
 {
     internal class Node
     {
-        ///Instance var.
-        
+        //Instance var.
+
         public int data;
         public Node next;
         //Constructor to create a Node with data and next pointer.
