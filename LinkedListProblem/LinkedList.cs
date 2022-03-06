@@ -16,6 +16,7 @@ namespace LinkedListProblem
             Node node = new Node(data);
 
             //condition to Check head and add first Node.
+
             if (this.head == null)
             {
                 this.head = node;
@@ -23,9 +24,11 @@ namespace LinkedListProblem
             else
             {
                 //Temp Node to work.
+
                 Node temp = head;
 
                 //Loop to check next pointer in Node.
+
                 while (temp.next != null)
                 {
                     temp = temp.next;
@@ -100,7 +103,6 @@ namespace LinkedListProblem
             this.head = this.head.next;
             return deleteNode;
         }
-
         //Method to delete Last Node
         public int DeleteLastNode()
         {
@@ -115,6 +117,7 @@ namespace LinkedListProblem
                 return 0;
             }
             //checking for tail Node.
+
             while (newNode.next.next != null)
             {
                 newNode = newNode.next;
@@ -123,7 +126,6 @@ namespace LinkedListProblem
             newNode.next = null;
             return deleteLastNode;
         }
-
         //Method to search any given Node
         public int SearchNode(int value)
         {
